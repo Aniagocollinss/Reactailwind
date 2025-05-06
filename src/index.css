@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* index.css */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 5s ease-out forwards;
+  }
+  
+
+  @keyframes customBounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-15px); /* Higher bounce */
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-8px); /* Smaller bounce */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-custom-bounce {
+  animation: customBounce 3s ease-in-out infinite; /* Slightly slower bounce */
+}
